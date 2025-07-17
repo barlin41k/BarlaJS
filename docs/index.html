@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BarlaJS Docs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>
-    window.$docsify = {
-      name: 'BarlaJS',
-      loadSidebar: true,
-      themeColor: '#42b983',
-      subMaxLevel: 2,
-      alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
-      }
-    }
-  </script>
-  <!-- Тема -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/dark.css">
+  <title>BarlaJs Docs</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
 </head>
 <body>
-  <div id="app">Загрузка...</div>
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <div id="app"></div>
+<script>
+  window.$docsify = {
+    name: 'BarlaJS',
+    repo: 'barlin41k/BarlaJS',
+    loadSidebar: true,
+    autoHeader: true,
+    auto2top: true,
+    loadNavbar: {
+      disableAutoGen: true
+    },
+    homepage: 'index.md'
+  };
+</script>
+<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="//unpkg.com/docsify-sidebar@4.0.3/dist/docsify-sidebar.min.js"></script>
+<script src="//unpkg.com/docsify-collapse@latest/docsify-collapse.min.js"></script>
 </body>
 </html>
