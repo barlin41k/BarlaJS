@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
   <style>
     .sidebar {
-        padding: 15px;
+        padding: 10px;
         border-right: 1px solid #333;
     }
 
@@ -37,6 +37,9 @@
       disableAutoGen: true
     },
     homepage: 'index.md'
+  };
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js');
   };
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
