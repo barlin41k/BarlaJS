@@ -38,9 +38,12 @@
     },
     homepage: 'index.md'
   };
-  if (typeof navigator.serviceWorker !== 'undefined') {
-    navigator.serviceWorker.register('sw.js');
-  };
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('Service Worker registered!'))
+      .catch(err => console.error('Service Worker registration failed:', err));
+  }
+
 </script>
 <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 <script src="//unpkg.com/docsify-sidebar@4.0.3/dist/docsify-sidebar.min.js"></script>
