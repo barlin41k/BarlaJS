@@ -1,0 +1,20 @@
+{
+  "name": "easyjson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/node": "^24.0.12",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
