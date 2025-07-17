@@ -1,5 +1,5 @@
 import { describe, it, expect, beforeAll, afterAll } from "vitest"
-import { BarlaAsync, BarlaSync } from "../src/classes"
+import { BarlaAsync, BarlaSync } from "../src"
 import * as fs from "fs/promises"
 import * as fsSync from "fs"
 import * as path from "path"

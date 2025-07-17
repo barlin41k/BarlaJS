@@ -27,7 +27,7 @@
 # Минимальный пример
 Пример показан на классе с **синхронной** работы модуля.
 ```ts
-import { BarlaSync } from "../src/classes";
+import { BarlaSync } from "../src";
 
 BarlaSync.setLogging(true);
 BarlaSync.create("test", {
