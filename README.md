@@ -26,5 +26,4 @@ console.log(BarlaSync.search("test", "test")); // вывод: true
 const data = BarlaSync.get("test");
 console.log(BarlaSync.isJsonEmpty(data)) // вывод: false
 console.log(BarlaSync.delete("test")); // вывод: true
-
 ```
